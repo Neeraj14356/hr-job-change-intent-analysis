@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Summary - Candidate Job-Change Intent Analysis</title>
+    <style>
+        :root {
+            --primary-color: #0B2B55; /* Navy */
+            --secondary-color: #00A6A6; /* Teal */
+            --accent-color: #F28C28; /* Orange */
+            --text-color: #333;
+            --light-bg: #fcfcfc;
+            --border-color: #dee2e6;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 40px;
+        }
+
+        header {
+            border-bottom: 3px solid var(--primary-color);
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        .header-title h1 {
+            margin: 0;
+            color: var(--primary-color);
+            font-size: 28px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .header-title p {
+            margin: 5px 0 0 0;
+            font-size: 18px;
+            color: var(--secondary-color);
+            font-weight: 600;
+        }
+
+        .header-info {
+            text-align: right;
+            font-size: 14px;
+            color: #666;
+        }
+
+        section {
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            font-size: 20px;
+            border-left: 5px solid var(--accent-color);
+            padding-left: 15px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .skill-item {
+            background: var(--light-bg);
+            padding: 10px 15px;
+            border-radius: 5px;
+            border: 1px solid var(--border-color);
+            font-size: 14px;
+        }
+
+        .skill-item strong {
+            color: var(--primary-color);
+        }
+
+        .findings-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .findings-list li {
+            margin-bottom: 12px;
+            padding-left: 25px;
+            position: relative;
+            font-size: 15px;
+        }
+
+        .findings-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--secondary-color);
+            font-weight: bold;
+        }
+
+        .dashboard-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .dashboard-img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+
+        .disclaimer {
+            background-color: #fff3cd;
+            border: 1px solid #ffeeba;
+            color: #856404;
+            padding: 15px;
+            font-size: 13px;
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 12px;
+            color: #999;
+            border-top: 1px solid var(--border-color);
+            padding-top: 20px;
+        }
+
+        @media print {
+            body { background-color: #fff; }
+            .container { padding: 20px; max-width: 100%; }
+            header { margin-bottom: 20px; }
+            .disclaimer { background-color: #fff3cd !important; -webkit-print-color-adjust: exact; }
+            .skill-item { background-color: #fcfcfc !important; -webkit-print-color-adjust: exact; }
+            .dashboard-img { page-break-inside: avoid; }
+            @page {
+                margin: 1.5cm;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-title">
+                <h1>Candidate Job-Change Intent Analysis</h1>
+                <p>HR Analytics Project | R&D TalentBridge</p>
+            </div>
+            <div class="header-info">
+                <strong>Portfolio Project</strong><br>
+                Aspiring Data Analyst
+            </div>
+        </header>
+
+        <section>
+            <h2>Project Overview</h2>
+            <p>
+                This project examines patterns in candidates' stated intent to change jobs using the HR Analytics: Job Change of Data Scientists dataset. After excluding 65 records with missing experience, the analysis of 19,093 candidates identifies associations across demographics such as professional experience, relevant skill alignment, and geographic development levels. The objective was to provide HR teams with data-driven insights to better understand groups with higher stated job-change intent.
+            </p>
+        </section>
+
+        <section>
+            <h2>Technical Approach & Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item"><strong>Power Query (ETL):</strong> Performed data cleaning, handled missing values, and filtered records to ensure a high-quality analysis set.</div>
+                <div class="skill-item"><strong>PivotTables:</strong> Aggregated large datasets to calculate intent rates across multiple dimensions.</div>
+                <div class="skill-item"><strong>Data Visualization:</strong> Developed an interactive dashboard using PivotCharts and Slicers for dynamic exploration.</div>
+                <div class="skill-item"><strong>HR Analytics:</strong> Defined and tracked KPIs such as the "Job-Change Intent Rate" to quantify workforce trends.</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Key Insights</h2>
+            <ul class="findings-list">
+                <li><strong>Overall Intent:</strong> Out of 19,093 analyzed candidates, 24.90% (4,754) expressed an intent to change jobs.</li>
+                <li><strong>Experience Pattern:</strong> An observed decrease in intent rates exists across experience bands, from 34.31% for early-career candidates (0–5 years) to 15.31% for seasoned professionals (21+ years).</li>
+                <li><strong>Relevance Association:</strong> Candidates without relevant experience (n=5,345) showed a 33.84% intent rate, while those with relevant experience (n=13,748) showed a 21.42% intent rate.</li>
+                <li><strong>City Development:</strong> Stated intent varied by city development index, with the lowest-index group (≤ 0.60, n=721) showing an intent rate of 57.98%.</li>
+                <li><strong>Data Gaps:</strong> 31.0% of records (5,915) lacked company size information. Within this "Not Provided" group, the intent rate was 40.6%, indicating a pattern between missing firmographics and stated mobility.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Interactive Dashboard</h2>
+            <p>
+                To make these findings actionable, I built a dynamic dashboard. It allows stakeholders to filter results in real-time using slicers for <strong>Experience Band, Education Level, Gender, and Company Type</strong>, transforming static figures into an exploratory tool for identifying groups with higher stated job-change intent.
+            </p>
+            <div class="dashboard-container">
+                <img src="Dashboard_Screenshot.jpg" alt="HR Analytics Dashboard Screenshot" class="dashboard-img">
+            </div>
+        </section>
+
+        <section>
+            <h2>Analyst Reflection</h2>
+            <p>
+                Through this project, I strengthened my ability to translate raw HR data into a polished business narrative. I learned the importance of data hygiene—specifically handling "Not Provided" values and missing records—and how to use interactive elements to let the data inform the user. This project demonstrates my capability to manage the end-to-end data pipeline, from ETL in Power Query to executive-level visualization.
+            </p>
+        </section>
+
+        <div class="disclaimer">
+            <strong>Note on Data Interpretation:</strong> In this analysis, <em>Target = 1</em> represents a candidate's <strong>stated intent</strong> to change jobs, not confirmed resignation or attrition. All findings describe <strong>associations</strong> within the dataset and do not establish a causal relationship.
+        </div>
+
+        <div class="footer">
+            &copy; 2026 | HR Analytics Portfolio | Created with Microsoft Excel
+        </div>
+    </div>
+</body>
+</html>
