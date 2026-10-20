@@ -1,0 +1,35 @@
+
+Project Title
+Candidate Job-Change Intent Analysis
+
+Organization
+R&D TalentBridge
+
+Project Overview
+This project analyzes candidate data to understand how job-change intent varies across experience, education, company size, relevant experience, and city development levels. The analysis uses Excel, Power Query, PivotTables, charts, and dashboard slicers.
+
+Business Objective
+Identify candidate groups with higher or lower job-change intent to help HR teams understand workforce patterns and guide further investigation.
+
+Dataset
+The project uses the publicly sourced HR Analytics: Job Change in Data dataset. The analysis workbook contains 19,093 cleaned records. 65 records with missing experience were excluded from the analysis.
+
+Key Findings
+• Overall job-change intent rate: 24.90% (4,754 of 19,093 candidates).
+• Intent rate decreases across experience bands, from 34.31% for 0–5 years to 15.31% for 21+ years.
+• Candidates without relevant experience show a 33.84% intent rate, compared with 21.42% for candidates with relevant experience.
+• The Company Size field is not provided for 5,915 candidates (31.0%); this missing information should not be treated as a company-size group.
+• City development levels show different intent rates; these are associations and do not establish cause.
+
+Tools and Methods
+Microsoft Excel, Power Query, PivotTables, PivotCharts, slicers, and data-quality checks.
+
+Limitations
+The results describe associations in this dataset and do not prove causation or predict actual resignations. “Target = 1” represents stated job-change intent, not confirmed attrition. Missing information and the exclusion of 65 records may affect interpretation.
+
+Files
+• HR_Candidate_Job_Change_Insights.xlsx — cleaned data, analysis, and interactive dashboard
+• Data_Dictionary.xlsx — field definitions and handling notes
+• KPI_Definitions.txt — KPI names, meanings, and calculation notes
+• Project_Summary.pdf — portfolio-ready project summary
+• Dashboard_Screenshot.png — dashboard preview

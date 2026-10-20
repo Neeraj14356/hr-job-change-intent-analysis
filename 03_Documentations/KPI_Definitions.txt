@@ -1,0 +1,33 @@
+
+Project: Candidate Job-Change Intent Analysis
+Organization: R&D TalentBridge
+
+1. Candidates in View
+Definition: Number of candidate records included in the current analysis.
+Calculation: Count of unique enrollee_id values after data cleaning.
+Current total: 19,093
+Note: Slicers may change this count if connected to the KPI.
+
+2. Job-Change Intent Rate
+Definition: Share of candidates with Target = 1 in the current selection.
+Calculation: Candidates with Target = 1 ÷ Candidates in View.
+Overall value: 24.90% (4,754 of 19,093)
+Interpretation: Measures stated job-change intent in the dataset; it is not a confirmed resignation or attrition rate.
+
+3. Candidates Seeking a Job Change
+Definition: Number of candidates with Target = 1 in the current selection.
+Calculation: Count of records where Target = 1.
+Overall value: 4,754
+Note: Slicers may change this count if connected to the KPI.
+
+4. Company Size Not Provided
+Definition: Share of candidates whose company_size value is “Not Provided.”
+Calculation: Count of “Not Provided” company_size records ÷ total candidate records in the current selection.
+Overall value: 31.0% (5,915 of 19,093)
+Interpretation: This KPI represents missing company-size information, not a company-size category or business segment.
+
+Data Notes
+• Target = 0 means the candidate is not seeking a job change; Target = 1 means the candidate is seeking a job change.
+• The analysis includes 19,093 records. 65 records with missing experience were excluded.
+• Findings describe associations in this dataset and do not establish cause and effect.
+• “Not Provided” indicates missing information and should be interpreted cautiously.
